@@ -1,0 +1,167 @@
+body {
+ background-color: #8fbc8f;
+  font-family: 'Comfortaa', cursive;
+  color: #fff5ee;
+}
+
+#form-page {
+  background-color: #fff5ee;
+  padding: 1%;
+  border-radius: 5px;
+  color: #113320;
+  width: 95%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+li {
+  margin: 5px;
+}
+
+.fields {
+  width: 33%;
+  height: 25px;
+  font-family: 'Comfortaa', cursive;
+  border: 1px solid #2e8b57;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.dropdowns {
+  width: 15%;
+  height: 35px;
+  font-family: 'Comfortaa', cursive;
+   border: 1px solid #2e8b57;
+margin: 10px;
+}
+
+#comments {
+  width: 30%;
+  height: 50px;
+  font-family: 'Comfortaa', cursive;
+  border: 1px solid #2e8b57;
+  border-radius: 2px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#submit {
+  display: block;
+  width: 250px;
+  height: 40px;
+  background-color: #2e8b57;
+  color: #fff5ee;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
+  border: 1px solid #2e8b57;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #fff5ee;
+  color: #2e8b57;
+  border: 2px solid #2e8b57;
+}
+
+label {
+  display: inline-block;
+  width: 300px;
+  text-align: right;
+  margin-left: 100px;
+}
+
+input, select, ul{
+  display: inline-block;
+}
+
+.shortlabel {
+  width: auto;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.list-label {
+  position: relative;
+  top: -55px;
+}
+
+.like-label {
+  position: relative;
+  top: -130px;
+}
+
+.comments-label {
+  position: relative;
+  top: -60px;
+}
+
+@media (max-width: 796px) {
+  
+  label {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  margin-left: 10px;
+}
+  
+}
+
+@media (max-width: 425px) {
+  
+  p {
+  font-size: 1em;
+  }
+  
+  label {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  margin-left: 5px;
+}
+  
+  .fields{
+   width: 37%;
+  }
+  
+  .dropdowns {
+    width: 40%;
+   position: relative;
+    top: -1em;
+  }
+  
+  .list-label {
+   position: relative;
+   top: -20px;
+}
+
+.like-label {
+  position: relative;
+  top: 5px;
+  width: 100%;
+}
+
+.comments-label {
+  position: relative;
+  top: -35px;
+}
+  
+  #comments {
+    width: 40%;
+  }
+  
+}

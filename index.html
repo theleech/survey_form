@@ -1,0 +1,131 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+<h1 id="title">🐚 Seashell Survey Form </h1>
+
+<div id="form-page">
+<p id="description">Please take a minute to let us know how you feel about seashells 🐚 </p>
+  
+<form id="survey-form">
+  <div id="name-div">
+  <label for="name" id="name-label">Name*:</label>
+    <input id="name" class="fields" type="text" placeholder="Enter your name" required>
+ </div>
+  
+  <div id="email-div">
+  <label for="email" id="email-label">Email*:</label>
+   <input id="email" class="fields" type="email" placeholder="Enter your Email" required>
+    </div>
+  
+  <div id="number-div">
+   <label for="number" id="number-label">Age*:</label>
+     <input id="number" class="fields" type="number" min="6" max="125" placeholder="How old are you?" required>
+  </div>
+  
+  <div id="dropdown-div">
+    <label for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown" class="dropdowns" name="roles">
+      <option disabled value selected>Select an option</option>
+      <option value="beach-bum">Beach Bum</option>
+      <option value="treasure-hunter">Treasure Hunter</option>
+      <option value="wave-shark">Wave Shark</option>
+      <option value="flying-badger">Flying Badger</option>
+      <option value="other">Other</option>
+    </select>
+  </div>  
+    
+ <div id="radio-div">
+   <label for="recommendation" class="list-label">Would you recommend seashells to a friend?</label>
+   <ul id="recommendation" style="list-style: none;">
+     <li>
+   <label for="definitely" class="shortlabel"><input id="definitely" type="radio" name="recommend" value="1">
+      Definitely</label>
+     </li>
+     <li>
+   <label for="absolutely" class="shortlabel">
+     <input id="absolutely" type="radio" name="recommend" value="2"> Absolutely
+   </label>
+     </li>
+     <li>
+   <label for="yes" class="shortlabel">
+     <input id="yes" type="radio" name="recommend" value="3"> YES!
+   </label>
+     </li>
+     <li>
+   <label for="whynot" class="shortlabel">
+     <input id="whynot" type="radio" name="recommend" value="4"> Why not?
+   </label>
+     </li>
+   </ul>
+ </div>
+  
+    <div id="select-div">
+    <label for="favourite" >What type of seashell is your favourite?</label>
+    <select id="favourite" class="dropdowns" name="shelltype">
+      <option disabled value selected>Select an option</option>
+      <option value="spiral">Spiral</option>
+      <option value="dosina">Dosina</option>
+      <option value="scallop">Scallop</option>
+      <option value="cockle">Cockle</option>
+      <option value="clam">Clam</option>
+      <option value="all">All of them!</option>
+    </select>
+  </div> 
+  
+  <div id="checkbox-div">
+    <label for="like-most" class="like-label">What do you like the most about seashells?<br>(Check all that apply)</label>
+    <ul id="like-most" style="list-style: none;">
+      <li>
+        <label for="pretty" class="shortlabel">
+          <input id="pretty" type="checkbox" name="most-like" value="1"> They are pretty
+        </label>
+      </li>
+      <li>
+        <label for="beach" class="shortlabel">
+          <input id="beach" type="checkbox" name="most-like" value="2"> I can find them on the beach
+        </label>
+      </li>
+      <li>
+        <label for="collect" class="shortlabel">
+          <input id="collect" type="checkbox" name="most-like" value="3"> They can be collected
+        </label>
+      </li>
+      <li>
+        <label for="memory" class="shortlabel">
+          <input id="memory" type="checkbox" name="most-like" value="4"> They trigger the most beautiful memories
+        </label>
+      </li>
+      <li>
+        <label for="sea" class="shortlabel">
+          <input id="sea" type="checkbox" name="most-like" value="5"> They can make sounds like the waves of the ocean
+        </label>
+      </li>
+      <li>
+        <label for="different" class="shortlabel">
+          <input id="different" type="checkbox" name="most-like" value="6"> They are all different 
+        </label>
+      </li>
+      <li>
+        <label for="treasure" class="shortlabel">
+          <input id="treasure" type="checkbox" name="most-like" value="7"> They make little treasures
+        </label>
+      </li>
+      <li>
+        <label for="tasty" class="shortlabel">
+          <input id="tasty" type="checkbox" name="most-like" value="8"> They are tasty when cooked
+        </label>
+      </li>
+     </ul>
+   </div>
+  
+  <div id="comment-div">
+    <label for="comments" class="comments-label"> Any comments on seashells?
+    </label>
+    <textarea id="comments" placeholder="Please enter your comment here..."></textarea>
+  </div>
+  
+  <input id="submit" type="submit" value="Submit my answers">
+</form>
+  
+</div>
